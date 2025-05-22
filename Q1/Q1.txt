@@ -1,0 +1,2 @@
+Installation of Python, Django and Visual Studio code editors, Creation of virtual
+environment, Django project and App should be demonstrated.
