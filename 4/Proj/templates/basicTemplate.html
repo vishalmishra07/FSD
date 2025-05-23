@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}Student Course Registration{% endblock %}</title>
+  </head>
+  <body>
+    <h1>STUDENT COURSE REGISTRATION PORTAL</h1>
+
+    <a href="/mainpage/">HOME</a>
+    <a href="/studentlist/">STUDENT LIST</a>
+    <a href="/courselist/">COURSE LIST</a>
+    <a href="/register/">REGISTER</a>
+    <a href="/enrolledlist/">ENROLLED LIST</a>
+
+    <!-- Generic List and Detail Views -->
+    <a href="{% url 'studentlist' %}">Generic Student List View</a>
+
+    {% block content %}
+    <!-- Dynamic content goes here -->
+    {% endblock %}
+  </body>
+</html>
