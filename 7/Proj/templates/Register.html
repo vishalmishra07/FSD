@@ -1,0 +1,17 @@
+{% extends 'basicTemplate.html' %}
+{% block title %} Course Register Page {% endblock %}
+{% block content %}
+<h1>Student Course Registration</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <label>Enter Student USN:</label>
+    <input type="text" name="usn" required /><br><br>
+
+    <label>Enter Course Code:</label>
+    <input type="text" name="coursecode" required /><br><br>
+
+    <input type="submit" value="ENROLL" />
+</form>
+
+{% endblock %}
